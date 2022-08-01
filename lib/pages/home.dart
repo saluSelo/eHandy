@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:dio/dio.dart';
 import 'package:firstapp/repositories/home_repo.dart';
 import 'package:flutter/material.dart';
@@ -89,20 +91,31 @@ class homePage extends ConsumerWidget {
                                         categoriesData[index].image!),
                                   ),
                                   Container(
-                                    height: 250,
-                                    width: 318,
-                                    padding: EdgeInsets.all(4),
-                                    margin: EdgeInsets.all(2),
-                                    color: myBlack.withOpacity(0.1),
-                                    alignment:
-                                        AlignmentDirectional.bottomCenter,
-                                    child: Text(
-                                      'hello',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 20),
-                                    ),
-                                  )
+                                      height: 250,
+                                      width: 318,
+                                      padding: EdgeInsets.all(4),
+                                      margin: EdgeInsets.all(2),
+                                      color: myBlack.withOpacity(0.1),
+                                      alignment:
+                                          AlignmentDirectional.bottomCenter,
+                                      child: Text(
+                                        'hello Google DSC - UOITC',
+                                        style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 20),
+                                      )),
+
+                                  // Positioned(
+                                  //     top: 120,
+                                  //     left: 40,
+                                  //     child: Text('hello Google DSC - UOITC'))
+                                  // Align(
+                                  //   alignment: Alignment.center,
+                                  //   widthFactor: 380,
+                                  //   child: Text('hello Google DSC - UOITC'),
+                                  // )
+                                  ElevatedButton(
+                                      onPressed: () {}, child: Text('50% '))
                                 ],
                               );
                             },
